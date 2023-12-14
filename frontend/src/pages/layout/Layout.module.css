@@ -28,7 +28,7 @@
     line-height: 28px;
     display: flex;
     align-items: flex-end;
-    color: #242424;
+    color: #FFFFFF;
 }
 
 .headerIcon {
@@ -75,7 +75,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #707070;
+    color: #FFFFFF;
     border: 1px solid #D1D1D1;
     border-radius: 4px;
 }
@@ -99,7 +99,7 @@
 }
 
 .copyButton {
-    color: #424242;
+    color: #FFFFFF;
 }
 
 .copyButtonText {
@@ -109,5 +109,5 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #242424;
+    color: #FFFFFF;
 }

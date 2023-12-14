@@ -57,7 +57,7 @@
     align-items: flex-end;
     text-align: center;
     letter-spacing: -0.01em;
-    color: #616161;
+    color: #FFFFFF;
 }
 
 .chatIcon {
@@ -112,7 +112,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: rgba(182, 52, 67, 1) 1px 1px 2px, rgba(182, 52, 67, 1) 0px 0px 1px;
-    color: #242424;
+    color: #FFFFFF;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -216,7 +216,7 @@
 .stopGeneratingIcon {
     width: 14px;
     height: 14px;
-    color: #424242;
+    color: #FFFFFF;
 }
 
 .stopGeneratingText {
@@ -228,7 +228,7 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #242424;
+    color: #FFFFFF;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -261,7 +261,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
-    color: #000000;
+    color: #FFFFFF;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -270,7 +270,7 @@
 .citationPanelDismiss {
     width: 18px;
     height: 18px;
-    color: #424242;
+    color: #FFFFFF;
 }
 
 .citationPanelDismiss:hover {
@@ -283,7 +283,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    color: #323130;
+    color: #FFFFFF;
     margin-top: 12px;
     margin-bottom: 12px;
 } 
@@ -298,7 +298,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #000000;
+    color: #FFFFFF;
     flex: none;
     order: 1;
     align-self: stretch;
@@ -315,7 +315,7 @@ a {
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-    color: #115EA3;
+    color: #a5d5ff;
     flex-direction: row;
     align-items: center;
     padding: 4px 6px;

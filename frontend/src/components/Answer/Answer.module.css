@@ -14,7 +14,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #323130;
+    color: #FFFFFF;
     flex: none;
     order: 1;
     align-self: stretch;
@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #707070;
+    color: #FFFFFF;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -62,7 +62,7 @@
     font-size: 12px;
     line-height: 16px;
 
-    color: #115EA3;
+    color: #b2dbff;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -96,7 +96,7 @@
     font-size: 10px;
     line-height: 14px;
     text-align: center;
-    color: #424242;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -112,7 +112,7 @@
     align-items: center;
     padding: 0px;
     margin-top: 4px;
-    color: #616161;
+    color: #FFFFFF;
     font-size: 10px;
 }
 
@@ -129,7 +129,7 @@
     line-height: 16px;
     display: flex;
     align-items: center;
-    color: #616161;
+    color: #FFFFFF;
 }
 
 .accordionTitle:hover {
@@ -156,7 +156,7 @@
     font-size: 10px;
     line-height: 14px;
     text-align: center;
-    color: #424242;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
