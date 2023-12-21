@@ -10,31 +10,32 @@
 
 .headerContainer {
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 .headerTitleContainer {
     display: flex;
     align-items: center;
-    margin-left: 14px;
+    margin-left: 0px;
     text-decoration: none;
 }
 
 .headerTitle {
-    font-style: normal;
+    font-style: italic;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 28px;
+    line-height: 14px;
     display: flex;
     align-items: flex-end;
     color: #d90429;
 }
 
 .headerIcon {
-    height: 32px;
-    width: 32px;
-    margin-left: 36px;
+    height: 94px;
+    width: 141px;
+    margin-left: 18px;
 }
 
 .shareButtonContainer {

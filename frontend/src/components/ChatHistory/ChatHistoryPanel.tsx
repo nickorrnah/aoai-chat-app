@@ -18,10 +18,10 @@ export enum ChatHistoryPanelTabs {
 
 const commandBarStyle: ICommandBarStyles = {
     root: {
-        padding: '0',
+        padding: '10',
         display: 'flex',
         justifyContent: 'center',
-        backgroundColor: 'transparent'
+        backgroundColor: '#242424'
     },
 };
 
@@ -88,7 +88,7 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
         <section className={styles.container} data-is-scrollable aria-label={"chat history panel"}>
             <Stack horizontal horizontalAlign='space-between' verticalAlign='center' wrap aria-label="chat history header">
                 <StackItem>
-                    <Text role="heading" aria-level={2} style={{ alignSelf: "center", fontWeight: "600", fontSize: "18px", marginRight: "auto", paddingLeft: "20px" }}>Chat history</Text>
+                    <Text role="heading" aria-level={2} style={{ alignSelf: "center", fontWeight: "600", fontSize: "18px", marginRight: "auto", paddingLeft: "20px", color: "#d90429" }}>Chat History</Text>
                 </StackItem>
                 <Stack verticalAlign="start">
                     <Stack horizontal styles={commandBarButtonStyle}>

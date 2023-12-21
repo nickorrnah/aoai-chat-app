@@ -20,11 +20,15 @@
     border-radius: 5px;
     display: flex;
     color: #dee2e6;
+    background-color: #242424;
+    margin-bottom: 5px;
+    border-color: #000000;
 }
 
 .itemCell:hover {
     background: #495057;
     color: #FFFFFF;
+    font-size: large;
 }
 
 .itemButton {
@@ -42,6 +46,8 @@
 
 .itemButton:hover {
     background-color: #6c757d;
+    color: #d90429;
+    background-color: #000000;
 }
 
 .chatGroup {

@@ -9,7 +9,6 @@ import uuid from 'react-uuid';
 import { isEmpty } from "lodash-es";
 
 import styles from "./Chat.module.css";
-import Costco from "../../assets/Costco.svg";
 
 import {
     ChatMessage,
@@ -585,13 +584,9 @@ const Chat = () => {
                     <div className={styles.chatContainer}>
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
-                                <img
-                                    src={Costco}
-                                    className={styles.chatIcon}
-                                    aria-hidden="true"
-                                />
                                 <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot is configured to answer your questions</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot is configured to help you find information about Costco's policies, procedures, and standards.</h2>
+                                <h3 className={styles.chatEmptyStateSubtitle}>Remember to double-check its answers by reviewing its sources.</h3>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
