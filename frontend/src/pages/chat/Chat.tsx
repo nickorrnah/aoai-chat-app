@@ -9,7 +9,7 @@ import uuid from 'react-uuid';
 import { isEmpty } from "lodash-es";
 
 import styles from "./Chat.module.css";
-import Azure from "../../assets/Azure.svg";
+import Costco from "../../assets/Costco.svg";
 
 import {
     ChatMessage,
@@ -41,7 +41,6 @@ const enum messageStatus {
 
 const Chat = () => {
     const appStateContext = useContext(AppStateContext)
-    const AUTH_ENABLED = appStateContext?.state.frontendSettings?.auth_enabled === "true" ;
     const chatMessageStreamEnd = useRef<HTMLDivElement | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [showLoadingMessage, setShowLoadingMessage] = useState<boolean>(false);
@@ -94,10 +93,6 @@ const Chat = () => {
     }, [appStateContext?.state.chatHistoryLoadingState])
 
     const getUserInfoList = async () => {
-        if (!AUTH_ENABLED) {
-            setShowAuthMessage(false);
-            return;
-        }
         const userInfoList = await getUserInfo();
         if (userInfoList.length === 0 && window.location.hostname !== "127.0.0.1") {
             setShowAuthMessage(true);
@@ -530,8 +525,8 @@ const Chat = () => {
     }, [processMessages]);
 
     useEffect(() => {
-        if (AUTH_ENABLED !== undefined) getUserInfoList();
-    }, [AUTH_ENABLED]);
+        getUserInfoList();
+    }, []);
 
     useLayoutEffect(() => {
         chatMessageStreamEnd.current?.scrollIntoView({ behavior: "smooth" })
@@ -586,7 +581,7 @@ const Chat = () => {
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={Azure}
+                                    src={Costco}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
