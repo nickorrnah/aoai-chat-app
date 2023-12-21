@@ -91,6 +91,11 @@ AZURE_COSMOSDB_MONGO_VCORE_VECTOR_COLUMNS = os.environ.get("AZURE_COSMOSDB_MONGO
 
 SHOULD_STREAM = True if AZURE_OPENAI_STREAM.lower() == "true" else False
 
+# Frontend Settings via Environment Variables
+AUTH_ENABLED = os.environ.get("AUTH_ENABLED", "true").lower()
+frontend_settings = { "auth_enabled": AUTH_ENABLED }
+
+
 # Chat History CosmosDB Integration Settings
 AZURE_COSMOSDB_DATABASE = os.environ.get("AZURE_COSMOSDB_DATABASE")
 AZURE_COSMOSDB_ACCOUNT = os.environ.get("AZURE_COSMOSDB_ACCOUNT")
@@ -774,6 +779,13 @@ def ensure_cosmos():
 
     return jsonify({"message": "CosmosDB is configured and working"}), 200
 
+@app.route("/frontend_settings", methods=["GET"])  
+def get_frontend_settings():
+    try:
+        return jsonify(frontend_settings), 200
+    except Exception as e:
+        logging.exception("Exception in /frontend_settings")
+        return jsonify({"error": str(e)}), 500  
 
 def generate_title(conversation_messages):
     ## make sure the messages are sorted by _ts descending
