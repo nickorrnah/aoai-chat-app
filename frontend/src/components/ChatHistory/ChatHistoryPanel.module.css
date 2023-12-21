@@ -1,7 +1,6 @@
 .container {
     max-height: calc(100vh - 100px);
     width: 300px;
-    
 }
 
 .listContainer {
@@ -20,10 +19,12 @@
     box-sizing: border-box;
     border-radius: 5px;
     display: flex;
+    color: #dee2e6;
 }
 
 .itemCell:hover {
-    background: #E6E6E6;
+    background: #495057;
+    color: #FFFFFF;
 }
 
 .itemButton {
@@ -40,7 +41,7 @@
 }
 
 .itemButton:hover {
-    background-color: #E6E6E6;
+    background-color: #6c757d;
 }
 
 .chatGroup {
