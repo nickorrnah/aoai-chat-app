@@ -4,7 +4,7 @@
     align-items: flex-start;
     padding: 8.1285px;
     gap: 5.42px;
-    background: #FFFFFF;
+    background: #1e1e1e;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14), 0px 0px 2px rgba(0, 0, 0, 0.12);
     border-radius: 5.419px;
 }
@@ -14,7 +14,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #323130;
+    color: #E0E0E0;
     flex: none;
     order: 1;
     align-self: stretch;
@@ -38,6 +38,7 @@
 .answerDisclaimerContainer {
     justify-content: center;
     display: flex;
+    color: #707070;
 }
 
 .answerDisclaimer {
@@ -45,7 +46,6 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-
     display: flex;
     align-items: center;
     text-align: center;
@@ -61,14 +61,14 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-
-    color: #115EA3;
+    background-color: #323232;
+    color: #4DA8DA;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 4px 6px;
     gap: 4px;
-    border: 1px solid #D1D1D1;
+    border: 2px solid #707070;
     border-radius: 4px;
 }
 
@@ -86,7 +86,7 @@
     padding: 0px;
     width: 14px;
     height: 14px;
-    border: 1px solid #E0E0E0;
+    border: 2px solid #707070;
     border-radius: 4px;
     flex: none;
     flex-grow: 0;
@@ -96,7 +96,7 @@
     font-size: 10px;
     line-height: 14px;
     text-align: center;
-    color: #424242;
+    color: #cccccc;
     cursor: pointer;
 }
 
@@ -106,21 +106,23 @@
 }
 
 .accordionIcon {
+    color: #707070;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px;
     margin-top: 4px;
-    color: #616161;
     font-size: 10px;
 }
 
 .accordionIcon:hover {
     cursor:pointer;
+    border: 2px solid #cccccc;
 }
 
 .accordionTitle {
+    color: #707070;
     margin-right: 5px;
     margin-left: 10px;
     font-style: normal;
@@ -129,7 +131,6 @@
     line-height: 16px;
     display: flex;
     align-items: center;
-    color: #616161;
 }
 
 .accordionTitle:hover {
@@ -145,7 +146,7 @@
     padding: 0px;
     width: 14px;
     height: 14px;
-    border: 1px solid #E0E0E0;
+    border: 2px solid #707070;
     border-radius: 4px;
     flex: none;
     order: 2;
@@ -156,13 +157,15 @@
     font-size: 10px;
     line-height: 14px;
     text-align: center;
-    color: #424242;
+    color: #cccccc;
     cursor: pointer;
 }
 
 .clickableSup:hover {
     text-decoration: underline;
     cursor: pointer;
+    border: 2px solid #cccccc;
+    background-color: #2d2d2d;
 }
 
 sup {
