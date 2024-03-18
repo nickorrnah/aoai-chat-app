@@ -86,9 +86,9 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
 
     return (
         <section className={styles.container} data-is-scrollable aria-label={"chat history panel"}>
-            <Stack horizontal horizontalAlign='space-between' verticalAlign='center' wrap aria-label="chat history header">
+            <Stack horizontal horizontalAlign='space-between' verticalAlign='center' wrap aria-label="chat history header" style={{backgroundColor: '#242424', borderRadius: '4px'}}>
                 <StackItem>
-                    <Text role="heading" aria-level={2} style={{ alignSelf: "center", fontWeight: "600", fontSize: "18px", marginRight: "auto", paddingLeft: "20px", color: "#d90429" }}>Chat History</Text>
+                    <Text role="heading" aria-level={2} style={{ alignSelf: "center", fontWeight: "600", fontSize: "18px", marginRight: "auto", paddingLeft: "20px", color: "#dee2e6", backgroundColor: '#242424' }}>Chat History</Text>
                 </StackItem>
                 <Stack verticalAlign="start">
                     <Stack horizontal styles={commandBarButtonStyle}>
